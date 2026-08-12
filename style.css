@@ -1,0 +1,31 @@
+
+header{
+background-color: #ce4e4e;
+color: rgb(255, 255, 255);
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+border: 5px solid #a00070;
+padding: 10px;
+}
+
+main{
+background-color: rgb(131, 87, 120);
+color: #360430;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+border: 5px solid #c75757;
+padding: 10px;
+}
+
+
+footer{
+background-color: #e7dfdf;
+color: rgb(255, 0, 0);
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+border: 5px solid #7c0606;
+padding: 10px;
+}
