@@ -28,4 +28,10 @@ max-width: 800px;
 margin: 0 auto;
 border: 5px solid #7c0606;
 padding: 10px;
+display: flex;
+img{
+    height: 10%;
+    width: 20%;
+
+}
 }

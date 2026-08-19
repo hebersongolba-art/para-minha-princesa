@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para minha princesa 💖</title>
 
+    <!-- Importação de fonte elegante para o título e textos especiais -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Segoe+UI:wght@400;500;700&display=swap" rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -21,12 +26,13 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(10px);
             padding: 40px;
-            border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(219, 48, 105, 0.2);
-            border: 2px solid #ff85a2;
+            /* Bordas ultra arredondadas e fofas para o container principal */
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(219, 48, 105, 0.15);
+            border: 3px solid #ff85a2;
         }
        
         header {
@@ -35,18 +41,20 @@
             position: relative;
         }
         header h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-style: italic;
             font-size: 3.5rem;
             color: #c9184a;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
         header p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 500;
             color: #5c0618;
             max-width: 700px;
             margin: 0 auto;
-            white-space: pre-line; /* Mantém as quebras de linha do texto carinhoso */
+            white-space: pre-line;
         }
 
         .decoracao-topo {
@@ -62,22 +70,27 @@
         .foto-container img {
             width: 100%;
             max-width: 500px;
-            border-radius: 20px;
-            border: 8px solid #fff;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
+            /* Borda arredondada e fofa assimétrica (estilo nuvem/bolha) */
+            border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+            border: 10px solid #fff;
+            box-shadow: 0 12px 25px rgba(219, 48, 105, 0.15);
+            transition: all 0.4s ease;
         }
         .foto-container img:hover {
-            transform: scale(1.03) rotate(1deg);
+            transform: scale(1.03) rotate(2deg);
+            /* Muda o formato da borda fofa suavemente ao passar o mouse */
+            border-radius: 40% 60% 40% 60% / 60% 40% 60% 40%;
         }
 
         section {
             background: #fff;
             padding: 30px;
             margin-bottom: 35px;
-            border-radius: 20px;
-            border-left: 6px solid #ff4d6d;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            /* Cantos bem arredondados e confortáveis para leitura */
+            border-radius: 25px;
+            /* Borda lateral fofa e gordinha */
+            border-left: 8px solid #ff4d6d;
+            box-shadow: 0 6px 18px rgba(219, 48, 105, 0.04);
             transition: transform 0.2s ease;
         }
         section:hover {
@@ -100,9 +113,11 @@
         .motivos-box {
             background: #fff0f3;
             padding: 30px;
-            border-radius: 20px;
+            /* Bordas bem arredondadas e estilo pontilhado fofo */
+            border-radius: 30px;
             margin-bottom: 35px;
-            border: 2px dashed #ff4d6d;
+            border: 3px dashed #ff4d6d;
+            box-shadow: inset 0 0 15px rgba(219, 48, 105, 0.05);
         }
         .motivos-box h2 {
             text-align: center;
@@ -125,7 +140,7 @@
             text-align: center;
             margin-top: 60px;
             padding-top: 30px;
-            border-top: 2px solid #ffb3c6;
+            border-top: 3px dotted #ffb3c6; /* Divisória pontilhada fofa */
         }
         footer p {
             font-size: 1.4rem;
@@ -140,7 +155,7 @@
 
         @keyframes pulsar {
             0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            50% { transform: scale(1.07); }
             100% { transform: scale(1); }
         }
 
@@ -148,7 +163,8 @@
             header h1 { font-size: 2.3rem; }
             header p { font-size: 1.1rem; }
             section h2 { font-size: 1.3rem; }
-            .container { padding: 20px; }
+            .container { padding: 20px; border-radius: 25px; }
+            .foto-container img { border-radius: 30px; } /* Simplifica no mobile */
         }
     </style>
 </head>
@@ -158,12 +174,12 @@
         
         <header>
             <div class="decoracao-topo">✨💖A💖✨</div>
-            <h1>𝒫𝒶𝓇𝒶 𝓂𝒾𝓃𝒽𝒶 𝓅𝓇𝒾𝓃𝒸ℯ𝓈𝒶</h1>
-            <p>𝓞 𝓪𝓶𝓸𝓻 𝓭𝓪 𝓶𝓲𝓷𝓱𝓪 𝓿𝓲𝓭𝓪 é 𝓿𝓸𝓬ê, 𝓪 𝓹𝓮𝓼𝓼𝓸𝓪 𝓺𝓾𝓮 𝓻𝓮𝓼𝓼𝓲𝓰𝓷𝓲𝓯𝓲𝓬𝓸𝓾 𝓸 𝓶𝓮𝓾 𝓹𝓪𝓼𝓼𝓪𝓭𝓸, 𝓭𝓪 𝓼𝓮𝓷𝓽𝓲𝓭𝓸 𝓪𝓸 𝓶𝓮𝓾 𝓹𝓻𝓮𝓼𝓮𝓷𝓽𝓮 𝓮 é 𝓪 ú𝓷𝓲𝓬𝓪 𝓬𝓮𝓻𝓽𝓮𝔃𝓪 𝓭𝓸 𝓶𝓮𝓾 𝓯𝓾𝓽𝓾𝓻𝓸.
+            <h1>Para minha princesa</h1>
+            <p>O amor da minha vida é você, a pessoa que ressignificou o meu passado, dá sentido ao meu presente e é a única certeza do meu futuro.
 
-            𝓕𝓪𝓵𝓪𝓻 𝓼𝓸𝓫𝓻𝓮 𝓸 𝓺𝓾𝓮 𝓮𝓾 𝓼𝓲𝓷𝓽𝓸 𝓹𝓸𝓻 𝓿𝓸𝓬ê é 𝓽𝓮𝓷𝓽𝓪𝓻 𝓽𝓻𝓪𝓭𝓾𝔃𝓲𝓻 𝓮𝓶 𝓹𝓪𝓵𝓪𝓿𝓻𝓪𝓼 𝓾𝓶 𝓼𝓮𝓷𝓽𝓲𝓶𝓮𝓷𝓽𝓸 𝓺𝓾𝓮 𝓽𝓻𝓪𝓷𝓼𝓫𝓸𝓻𝓭𝓪 𝓷𝓸 𝓶𝓮𝓾 𝓹𝓮𝓲𝓽𝓸 𝓽𝓸𝓭𝓸𝓼 𝓸𝓼 𝓭𝓲𝓪𝓼.
+            Falar sobre o que eu sinto por você é tentar traduzir em palavras um sentimento que transbordanono meu peito todos os dias.
 
-            𝓔𝓾 𝓪𝓶𝓸 𝓿𝓸𝓬ê 𝓬𝓸𝓶 𝓾𝓶𝓪 𝓲𝓷𝓽𝓮𝓷𝓼𝓲𝓭𝓪𝓭𝓮 𝓺𝓾𝓮 𝓶𝓮 𝓼𝓾𝓻𝓹𝓻𝓮𝓮𝓷𝓭𝓮, 𝓮 𝓬𝓪𝓭𝓪 𝓭𝓮𝓽𝓪𝓵𝓱𝓮 𝓭𝓪 𝓷𝓸𝓼𝓼𝓪 𝓱𝓲𝓼𝓽ó𝓻𝓲𝓪 𝓼ó 𝓶𝓮 𝓭𝓪 𝓶𝓪𝓲𝓼 𝓬𝓮𝓻𝓽𝓮𝔃𝓪 𝓭𝓮 𝓺𝓾𝓮 𝓯𝓸𝓶𝓸𝓼 𝓯𝓮𝓲𝓽𝓸𝓼 𝓾𝓶 𝓹𝓪𝓻𝓪 𝓸 𝓸𝓾𝓽𝓻𝓸. ✨🌸</p>
+            Eu amo você com uma intensidade que me surpreende, e cada detalhe da nossa história só me dá mais certeza de que fomos feitos um para o outro. ✨🌸</p>
         </header>
 
         <div class="foto-container">
@@ -197,90 +213,22 @@
             </div>
 
             <section>
+                <h2>A Transformação da Minha Vida 🔄💘</h2>
+                <p>Você mudou a minha vida de um jeito que eu nunca imaginei. Desde que você apareceu, tudo começou a fazer mais sentido. Os dias ficaram mais leves, os sorrisos mais sinceros e meu coração encontrou um lugar seguro em você. Você cura dores que nem sabia que existiam em mim.</p>
+            </section>
+
+            <section>
                 <h2>O Nosso Futuro Juntos 🏡🌅</h2>
-                <p>O nosso futuro é o lugar onde eu mais quero estar ao seu lado. Olho para frente e consigo ver uma vida inteira construída com você. Quero compartilhar os seus sonhos, segurar a sua mano nas conquistas e te apoiar em qualquer desafio. Você é, e sempre será, a minha escolha favorita para dividir a eternidade.</p>
+                <p>O nosso futuro é o lugar onde eu mais quero estar ao seu lado. Olho para frente e consigo ver uma vida inteira construída com você. Quero compartilhar os seus sonhos, segurar a sua mão nas conquistas e te apoiar em qualquer desafio. Você é, e sempre será, a minha escolha favorita para dividir a eternidade.</p>
             </section>
         </main>
 
         <footer>
             <p>Com todo o meu amor, para sempre. ❤️</p>
-            <div class="assinatura">Feito com carinho para a minha princesa Ana</div>
+            <div class="assinatura">Seu bobo apaixonado</div>
         </footer>
 
     </div>
 
 </body>
 </html>
-
-            
-            <section>
-                <h2>A Transformação da Minha Vida 🔄💘</h2>
-                <p>Você mudou a minha vida de um jeito que eu nunca imaginei. Desde que você apareceu, tudo começou a fazer mais sentido. Os dias ficaram mais leves, os sorrisos mais sinceros e meu coração encontrou um lugar seguro em você. Você cura dores que nem sabia que existiam em mim.</p>
-            </section>
-
-            
-            <section>
-                <h2>Meu Porto Seguro 🫂🕊️</h2>
-                <p>Seu abraço é o meu lugar favorito no mundo. Não importa o quão caótico o dia lá fora esteja, quando estou com você eu sinto paz. Seu carinho me faz perceber todos os dias o quanto sou feliz por ter você comigo. É nos teus braços que recarrego minhas energias.</p>
-            </section>
-
-           
-            <section>
-                <h2>Além Desta Vida 🪐🌹</h2>
-                <p>Eu escolheria você em todas as vidas. Se eu tivesse mil chances de viver novamente, em cada uma delas eu procuraria por você. Porque amar você foi a melhor coisa que já aconteceu comigo. Nosso encontro não foi por acaso, foi um lindo plano do destino.</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>Eu te amo daqui até o infinito! 💖🚀</p>
-            <div class="assinatura">De: Seu eterno namorado apaixonado 🤵🏽‍♂️💍</div>
-        </footer>
-
-    
-   
- <div class="foto-container">
-            
-            <img src="meliodas.jpg" alt="">
-        </div>
-<section>
-    <h2>Assim como o amor de meliodas duro por mais  de 30000 mil anos o meu por voçê por voçê e como o infinto as veses comparar o infito com ele seria uma grande desrespeito,</h2>
-</section>
-
-<section>
-<div>
-    Assim como os lírios se destacam pela sua elegância e pureza,
-     o meu amor por você floresce todos os dias, trazendo luz
-    , perfume e a certeza de um sentimento verdadeiro.
-</div>
-        
-</section>
-
-
-</body>
-<script>
-const botoes = document.querySelectorAll("button");
-
-botoes.forEach(function (botao) {
-let curtiu = false;
-botao.addEventListener("click", botaoClicado);
-function botaoClicado() {
-
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-if (curtiu === false){
-texto.textContent++;
-curtiu = true;
-} else{
-
-texto.textContent--;
-curtiu = false;
-}
-}
-})
-
-</script>
-</html>
-<main>
-    </div>
-</main>
- <p class="autor"> Por heberson gustavo golba</p>
