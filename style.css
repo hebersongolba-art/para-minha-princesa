@@ -1,37 +1,290 @@
 
-header{
-background-color: #ce4e4e;
-color: rgb(255, 255, 255);
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-border: 5px solid #a00070;
-padding: 10px;
-}
+<style>
+        :root {
+            
+            --primary: #800000;          
+            --primary-light: #4a0000;    
+            --primary-hover: #b30000;    
+            --text-main: #121212;       
+            --text-muted: #4a4a4a;      
+            --bg-gradient: linear-gradient(135deg, #1a0000 0%, #000000 100%); 
+        }
 
-main{
-background-color: rgb(131, 87, 120);
-color: #360430;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-border: 5px solid #c75757;
-padding: 10px;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            background: var(--bg-gradient);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #e0e0e0;             
+            line-height: 1.7;
+            padding: 40px 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
 
-footer{
-background-color: #e7dfdf;
-color: rgb(255, 0, 0);
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-border: 5px solid #7c0606;
-padding: 10px;
-display: flex;
-img{
-    height: 10%;
-    width: 20%;
+        body::before {
+            content: "💖 ✨ ❤️ 🌸 🌌";
+            position: fixed;
+            top: -10%;
+            left: 5%;
+            font-size: 2rem;
+            opacity: 0.05;             
+            word-spacing: 50vw;
+            line-height: 30vh;
+            z-index: 0;
+            pointer-events: none;
+        }
 
-}
-}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(18, 18, 18, 0.85); 
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 60px 40px;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(128, 0, 0, 0.3); 
+            border: 1px solid rgba(128, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+       
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .decoracao-topo {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: inline-block;
+            animation: pulsar 2.5s infinite ease-in-out;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: #860000;             
+            margin-bottom: 25px;
+            text-shadow: 0 2px 10px rgba(255, 51, 51, 0.3);
+        }
+
+        header p {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #cccccc;
+            max-width: 650px;
+            margin: 0 auto;
+            white-space: pre-line;
+            text-align: center;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 550px;
+            height: 400px;
+            margin: 50px auto;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            border: 6px solid #4a0000;   
+            background: #121212;
+        }
+
+        .slides {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(26, 0, 0, 0.8);
+            border: 1px solid #800000;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a80000;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+            z-index: 10;
+            backdrop-filter: blur(5px);
+        }
+
+        .slider-btn:hover {
+            background: #800000;
+            color: #ffffff;
+        }
+
+        .btn-prev { left: 15px; }
+        .btn-next { right: 15px; }
+
+        .timeline {
+            position: relative;
+            margin: 60px 0;
+            padding-left: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #800000;        
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 25px;
+        }
+
+        .timeline-item::before {
+            content: '❤️';
+            position: absolute;
+            left: -11px;
+            top: 2px;
+            background: #121212;
+            font-size: 0.9rem;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timeline-item h2 {
+            font-size: 1.4rem;
+            color: #960000;             
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timeline-item p {
+            font-size: 1.05rem;
+            color: #dddddd;
+            text-align: justify;
+        }
+
+        .motivos-card {
+            background: linear-gradient(145deg, #121212, #1a0000); 
+            padding: 40px;
+            border-radius: 24px;
+            margin: 50px 0;
+            border: 1px solid rgba(128, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .motivos-card h2 {
+            text-align: center;
+            color: #b10000;
+            margin-bottom: 30px;
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .grid-motivos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .motivo-item {
+            background: #1a0000;         
+            padding: 20px;
+            border-radius: 16px;
+            border: 1px solid #4a0000;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .motivo-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(128, 0, 0, 0.4);
+            border-color: #800000;
+        }
+
+        .motivo-icon {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .motivo-item b {
+            color: #6b0000;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .motivo-item p {
+            font-size: 0.95rem;
+            color: #cccccc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid #4a0000;
+        }
+
+        footer p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #9e0000;
+            margin-bottom: 10px;
+        }
+
+        .assinatura {
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888888;
+        }
+
+        @keyframes pulsar {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 15px 10px; }
+            .container { padding: 40px 20px; border-radius: 24px; }
+            header h1 { font-size: 3rem; }
+            header p { font-size: 1.05rem; }
+            .slider-container { height: 300px; }
+            .grid-motivos { grid-template-columns: 1fr; }
+            .timeline { padding-left: 15px; }
+        }
+</style>
