@@ -1,11 +1,11 @@
 <style>
         :root {
-            --primary: #FF0000;          /* Vermelho Puro Forte */
-            --primary-light: #800000;    /* Vermelho Escuro Sólido */
-            --primary-hover: #FF3333;    /* Vermelho Brilhante para Hover */
-            --text-main: #FFFFFF;        /* Branco Puro para leitura sobre o preto */
-            --text-muted: #FF0000;       /* Vermelho para textos secundários */
-            --bg-gradient: linear-gradient(135deg, #000000 0%, #150000 100%); /* Fundo Preto com leve transição */
+            --primary: #FF0000;         
+            --primary-light: #800000;    
+            --primary-hover: #FF3333;    
+            --text-main: #FFFFFF;        
+            --text-muted: #FF0000;       
+            --bg-gradient: linear-gradient(135deg, #000000 0%, #150000 100%); 
         }
 
         * {
@@ -15,10 +15,10 @@
         }
 
         body {
-            background: #000000;         /* Fundo inteiramente preto */
+            background: #000000;         
             background-image: var(--bg-gradient);
             font-family: 'Plus Jakarta Sans', sans-serif;
-            color: #FFFFFF;              /* Texto principal em Branco */
+            color: #FFFFFF;              
             line-height: 1.7;
             padding: 40px 20px;
             min-height: 100vh;
@@ -32,7 +32,7 @@
             top: -10%;
             left: 5%;
             font-size: 2rem;
-            opacity: 0.15;               /* Aumentada a opacidade para destacar no preto */
+            opacity: 0.15;               
             word-spacing: 50vw;
             line-height: 30vh;
             z-index: 0;
@@ -42,11 +42,11 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: #050000;         /* Container Preto Absoluto */
+            background: #350101;         
             padding: 60px 40px;
             border-radius: 32px;
-            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.4); /* Sombra Vermelha Viva */
-            border: 2px solid #FF0000;   /* Borda Vermelha Sólida */
+            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.4);
+            border: 2px solid #FF0000;   
             position: relative;
             z-index: 1;
         }
@@ -66,15 +66,15 @@
         header h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 4rem;
-            color: #FF0000;              /* Título em Vermelho Vivo */
+            color: #270202;              
             margin-bottom: 25px;
-            text-shadow: 0 0 15px #FF0000; /* Efeito Glow Vermelho */
+            text-shadow: 0 0 15px #FF0000; 
         }
 
         header p {
             font-size: 1.15rem;
             font-weight: 500;
-            color: #FFFFFF;              /* Subtítulo em Branco Puro */
+            color: #FFFFFF;              
             max-width: 650px;
             margin: 0 auto;
             white-space: pre-line;
@@ -89,7 +89,7 @@
             border-radius: 24px;
             overflow: hidden;
             box-shadow: 0 15px 35px rgba(255, 0, 0, 0.3);
-            border: 6px solid #FF0000;   /* Moldura do Slider Vermelha */
+            border: 6px solid #FF0000;   
             background: #000000;
         }
 
@@ -133,7 +133,7 @@
 
         .slider-btn:hover {
             background: #FF0000;
-            color: #000000;              /* Inverte para texto preto no hover */
+            color: #000000;              
         }
 
         .btn-prev { left: 15px; }
@@ -151,7 +151,7 @@
             left: 0;
             top: 0;
             bottom: 0;
-            width: 4px;                  /* Linha mais grossa */
+            width: 4px;                  
             background: #FF0000;        
             border-radius: 2px;
         }
@@ -187,16 +187,16 @@
 
         .timeline-item p {
             font-size: 1.05rem;
-            color: #FFFFFF;              /* Texto da história em Branco para leitura */
+            color: #FFFFFF;              
             text-align: justify;
         }
 
         .motivos-card {
-            background: #000000;         /* Card Fundo Preto */
+            background: #000000;         
             padding: 40px;
             border-radius: 24px;
             margin: 50px 0;
-            border: 2px solid #FF0000;   /* Borda Vermelha Sólida */
+            border: 2px solid #FF0000;   
             box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
         }
 
@@ -216,7 +216,7 @@
         }
 
         .motivo-item {
-            background: #100000;         /* Preto com leve toque avermelhado de profundidade */
+            background: #100000;         
             padding: 20px;
             border-radius: 16px;
             border: 1px solid #800000;
@@ -236,7 +236,7 @@
         }
 
         .motivo-item b {
-            color: #FF0000;              /* Título do motivo em Vermelho */
+            color: #FF0000;              
             display: block;
             margin-bottom: 5px;
             font-size: 1.1rem;
@@ -244,7 +244,7 @@
 
         .motivo-item p {
             font-size: 0.95rem;
-            color: #FFFFFF;              /* Texto do motivo em Branco */
+            color: #FFFFFF;              
         }
 
         footer {
@@ -267,7 +267,7 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #FFFFFF;              /* Assinatura em Branco */
+            color: #FFFFFF;              
         }
 
         @keyframes pulsar {
