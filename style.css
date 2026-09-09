@@ -1,13 +1,11 @@
-
 <style>
         :root {
-            
-            --primary: #800000;          
-            --primary-light: #4a0000;    
-            --primary-hover: #b30000;    
-            --text-main: #121212;       
-            --text-muted: #4a4a4a;      
-            --bg-gradient: linear-gradient(135deg, #1a0000 0%, #000000 100%); 
+            --primary: #FF0000;          /* Vermelho Puro Forte */
+            --primary-light: #800000;    /* Vermelho Escuro Sólido */
+            --primary-hover: #FF3333;    /* Vermelho Brilhante para Hover */
+            --text-main: #FFFFFF;        /* Branco Puro para leitura sobre o preto */
+            --text-muted: #FF0000;       /* Vermelho para textos secundários */
+            --bg-gradient: linear-gradient(135deg, #000000 0%, #150000 100%); /* Fundo Preto com leve transição */
         }
 
         * {
@@ -17,9 +15,10 @@
         }
 
         body {
-            background: var(--bg-gradient);
+            background: #000000;         /* Fundo inteiramente preto */
+            background-image: var(--bg-gradient);
             font-family: 'Plus Jakarta Sans', sans-serif;
-            color: #e0e0e0;             
+            color: #FFFFFF;              /* Texto principal em Branco */
             line-height: 1.7;
             padding: 40px 20px;
             min-height: 100vh;
@@ -28,12 +27,12 @@
         }
 
         body::before {
-            content: "💖 ✨ ❤️ 🌸 🌌";
+            content: "❤️ 🖤 ❤️ 🖤 ❤️";
             position: fixed;
             top: -10%;
             left: 5%;
             font-size: 2rem;
-            opacity: 0.05;             
+            opacity: 0.15;               /* Aumentada a opacidade para destacar no preto */
             word-spacing: 50vw;
             line-height: 30vh;
             z-index: 0;
@@ -43,13 +42,11 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: rgba(18, 18, 18, 0.85); 
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: #050000;         /* Container Preto Absoluto */
             padding: 60px 40px;
             border-radius: 32px;
-            box-shadow: 0 20px 40px rgba(128, 0, 0, 0.3); 
-            border: 1px solid rgba(128, 0, 0, 0.2);
+            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.4); /* Sombra Vermelha Viva */
+            border: 2px solid #FF0000;   /* Borda Vermelha Sólida */
             position: relative;
             z-index: 1;
         }
@@ -69,15 +66,15 @@
         header h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 4rem;
-            color: #860000;             
+            color: #FF0000;              /* Título em Vermelho Vivo */
             margin-bottom: 25px;
-            text-shadow: 0 2px 10px rgba(255, 51, 51, 0.3);
+            text-shadow: 0 0 15px #FF0000; /* Efeito Glow Vermelho */
         }
 
         header p {
             font-size: 1.15rem;
             font-weight: 500;
-            color: #cccccc;
+            color: #FFFFFF;              /* Subtítulo em Branco Puro */
             max-width: 650px;
             margin: 0 auto;
             white-space: pre-line;
@@ -91,9 +88,9 @@
             margin: 50px auto;
             border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-            border: 6px solid #4a0000;   
-            background: #121212;
+            box-shadow: 0 15px 35px rgba(255, 0, 0, 0.3);
+            border: 6px solid #FF0000;   /* Moldura do Slider Vermelha */
+            background: #000000;
         }
 
         .slides {
@@ -119,8 +116,8 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(26, 0, 0, 0.8);
-            border: 1px solid #800000;
+            background: #000000;
+            border: 2px solid #FF0000;
             width: 45px;
             height: 45px;
             border-radius: 50%;
@@ -128,16 +125,15 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #a80000;
+            color: #FF0000;
             font-size: 1.2rem;
             transition: all 0.2s;
             z-index: 10;
-            backdrop-filter: blur(5px);
         }
 
         .slider-btn:hover {
-            background: #800000;
-            color: #ffffff;
+            background: #FF0000;
+            color: #000000;              /* Inverte para texto preto no hover */
         }
 
         .btn-prev { left: 15px; }
@@ -155,8 +151,8 @@
             left: 0;
             top: 0;
             bottom: 0;
-            width: 3px;
-            background: #800000;        
+            width: 4px;                  /* Linha mais grossa */
+            background: #FF0000;        
             border-radius: 2px;
         }
 
@@ -171,7 +167,7 @@
             position: absolute;
             left: -11px;
             top: 2px;
-            background: #121212;
+            background: #000000;
             font-size: 0.9rem;
             width: 22px;
             height: 22px;
@@ -182,7 +178,7 @@
 
         .timeline-item h2 {
             font-size: 1.4rem;
-            color: #960000;             
+            color: #FF0000;             
             margin-bottom: 10px;
             display: flex;
             align-items: center;
@@ -191,25 +187,26 @@
 
         .timeline-item p {
             font-size: 1.05rem;
-            color: #dddddd;
+            color: #FFFFFF;              /* Texto da história em Branco para leitura */
             text-align: justify;
         }
 
         .motivos-card {
-            background: linear-gradient(145deg, #121212, #1a0000); 
+            background: #000000;         /* Card Fundo Preto */
             padding: 40px;
             border-radius: 24px;
             margin: 50px 0;
-            border: 1px solid rgba(128, 0, 0, 0.3);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 2px solid #FF0000;   /* Borda Vermelha Sólida */
+            box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
         }
 
         .motivos-card h2 {
             text-align: center;
-            color: #b10000;
+            color: #FF0000;
             margin-bottom: 30px;
             font-size: 1.6rem;
             font-weight: 700;
+            text-shadow: 0 0 10px #FF0000;
         }
 
         .grid-motivos {
@@ -219,17 +216,17 @@
         }
 
         .motivo-item {
-            background: #1a0000;         
+            background: #100000;         /* Preto com leve toque avermelhado de profundidade */
             padding: 20px;
             border-radius: 16px;
-            border: 1px solid #4a0000;
+            border: 1px solid #800000;
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .motivo-item:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(128, 0, 0, 0.4);
-            border-color: #800000;
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+            border-color: #FF0000;
         }
 
         .motivo-icon {
@@ -239,7 +236,7 @@
         }
 
         .motivo-item b {
-            color: #6b0000;
+            color: #FF0000;              /* Título do motivo em Vermelho */
             display: block;
             margin-bottom: 5px;
             font-size: 1.1rem;
@@ -247,21 +244,22 @@
 
         .motivo-item p {
             font-size: 0.95rem;
-            color: #cccccc;
+            color: #FFFFFF;              /* Texto do motivo em Branco */
         }
 
         footer {
             text-align: center;
             margin-top: 60px;
             padding-top: 40px;
-            border-top: 1px solid #4a0000;
+            border-top: 2px solid #FF0000;
         }
 
         footer p {
             font-family: 'Dancing Script', cursive;
             font-size: 2.2rem;
-            color: #9e0000;
+            color: #FF0000;
             margin-bottom: 10px;
+            text-shadow: 0 0 10px #FF0000;
         }
 
         .assinatura {
@@ -269,13 +267,13 @@
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #888888;
+            color: #FFFFFF;              /* Assinatura em Branco */
         }
 
         @keyframes pulsar {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.08); }
-            100% { transform: scale(1); }
+            0% { transform: scale(1); filter: drop-shadow(0 0 2px #FF0000); }
+            50% { transform: scale(1.08); filter: drop-shadow(0 0 15px #FF0000); }
+            100% { transform: scale(1); filter: drop-shadow(0 0 2px #FF0000); }
         }
 
         @media (max-width: 768px) {
